@@ -1,38 +1,940 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,650;1,650&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+@import url('https://fonts.cdnfonts.com/css/the-amsterdam');
 
 * {
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+html {
+    scroll-behavior: smooth;
+   }
+
+.nav__links {
+    font-family: "Montserrat", sans-serif; 
+    align-items: center;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav__links li a {
+    color: rgb(0, 0, 0);
+}
+
+
+.logo {
+    cursor: pointer;
+    display: none;
+}
+
+.logo2 {
+    cursor: pointer;
+    transition: all 0.4s;
+    display: flex;
+}
+
+.logo2:hover {
+    padding: 15px 15px 15px;
+}
+
+nav {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+header {
+    transition: all 0.4s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+}
+
+.btnNav2 {
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif; 
+    border: 0px;
+    padding: 10px 10px 10px;
+    transition: all 0.2s;
+    background-color: white;
+}
+
+.btnNav2:hover {
+    background-color: rgb(234, 234, 234);
+}
+
+#btnNav {
+    color: rgb(0, 0, 0);
+    transition: all 0.2s;
+    padding: 10px 10px 10px;
+    border-radius: 2px;
+}
+
+#btnNav:hover {
+    background-color: rgb(234, 234, 234);
+}
+
+.bodycontact {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    display: flex;
+}
+
+@media (max-width: 1000px) {
+    .logo {
+        width: 120px;
+    }
+    .logo2 {
+        width: 120px;
+    }
+    .nav__links {
+        font-size: 12px;
+    }
+
+    #ObidosMun {
+        width: 160px;
+    }
+    #Josefa {
+        width: 170px;
+    }
+    #EspacoO {
+        width: 160px;
+    }
+    #ObidosDetalhes {
+        width: 120px;
+    }
+    .apoios {
+        display: flex;
+        flex-direction: column;
+    }
+    .ContactMe {
+        flex-direction: column;
+    }
+    .outrosContact h3 {
+        font-size: 15px;
+    }
+
+    .outrosContact {
+        width: 330px;
+        height: 300px;
+    }
+
+    .SocialMediaContact {
+        margin-top: 45px;
+        gap: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #Three {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+    }
+    
+    #Three div {
+        height: 300px;
+        width: 335px;
+        margin: 10px;
+    }
+    .Sobre {
+        height: 300px;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .div1, .div2, .div3 {
+        min-height: 200px;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+      }
+
+    .CodCont {
+        margin-top: 30px;
+    }
+    .NumeroCont {
+        margin-top: 30px;
+    }
+    .EmalCont {
+        margin-top: 30px;
+    }
+    .Email {
+        height: 30px;
+        min-width: 300px;
+    }
+    .Msg {
+        height: 30px;
+        min-width: 300px;
+    }
+    .Nome {
+        height: 30px;
+        min-width: 300px;
+    }
+    .row {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }  
+    
+    .logo {
+        width: 200px;
+       display: flex;
+   }
+   .logo2 {
+       width: 200px;
+      display: none;
+   }    
+   .nav__links {
+    display: none;
+   }
+   .Sobre h2 {
+    color: rgb(197, 157, 95);
+    font-family: "the amsterdam", sans-serif; 
+    font-weight: 01;
+    font-size: 30px;
+}
+    .logos-slide img {
+    border-radius: 20px;
+    margin: 0 8px;
+    height: 200px;
+    } 
+    .bannernos h2 {
+        font-size: 70px;
+    }
+    
+    .bannernos h3 {
+        font-size: 30px;
+    }
+    
+    .bannernos p {
+        font-size: 15px;
+    }  
+    #submit {
+        width: 300px;
+    }
+    .container2 h2 {
+        font-size: 65px;
+    }
+    .footer {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 580px) {
+    .logo {
+         width: 200px;
+        display: flex;
+    }
+    .logo2 {
+        width: 200px;
+       display: none;
+   }
+    .nav__links {
+        display: none;
+    }
+    #ObidosMun {
+        width: 130px;
+    }
+    #Josefa {
+        width: 140px;
+    }
+    #EspacoO {
+        width: 130px;
+    }
+    #ObidosDetalhes {
+        width: 100px;
+    }
+    .apoios {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .outrosContact {
+        width: 90%;
+        height: 450px;
+    }
+
+    .SocialMediaContact {
+        margin-top: 35px;
+        gap: 20px;
+        display: flex;
+    }
+    .Email {
+        height: 30px;
+        min-width: 300px;
+    }
+    .Msg {
+        height: 30px;
+        min-width: 300px;
+    }
+    .Nome {
+        height: 30px;
+        min-width: 300px;
+    }
+
+    .CodCont {
+        margin-top: 80px;
+    }
+    .NumeroCont {
+        margin-top: 80px;
+    }
+    .EmalCont {
+        margin-top: 80px;
+    }
+    #submit {
+        width: 300px;
+    }
+
+    .Sobre {
+        display: flex;
+        align-items: center;
+    }
+    #Three {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 600px;
+    }
+    
+    #Three div {
+        height: 300px;
+        width: 100%;
+        margin: 5px;
+    }
+    .Sobre {
+        height: 410px;
+    }
+    .Sobre p {
+        font-size: 12px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+    .div1, .div2, .div3 {
+        min-height: 200px;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+      }
+
+    .row {
+        flex-direction: column;
+        text-align: center;
+    }
+    .Sobre h2 {
+        color: rgb(197, 157, 95);
+        font-family: "the amsterdam", sans-serif; 
+        font-weight: 01;
+        font-size: 45px;
+    }
+    .logos-slide img {
+        border-radius: 20px;
+        margin: 0 8px;
+        height: 120px;
+    }
+    .bannernos h2 {
+        font-size: 40px;
+    }
+    
+    .bannernos h3 {
+        font-size: 24px;
+    }
+    
+    .bannernos p {
+        margin-top: 40px;
+        font-size: 15px;
+    }
+    .bannernos {
+        text-align: center;
+    }
+    .container2 h2 {
+        font-size: 45px;
+    }
+    .footer {
+        flex-direction: column;
+    }
+
+    #hamburguer {
+        display: flex;
+    }
+}
+
+@media (min-width:1000px) {
+    #ObidosMun {
+        transition: all 0.4s;
+        width: 110px;
+    }
+    #Josefa {
+        width: 120px;
+    }
+    #EspacoO {
+        width: 110px;
+    }
+    #ObidosDetalhes {
+        width: 70px;
+    }
+    #ObdCriativo {
+        width: 180px;
+    }
+    .ContactMe {
+        flex-direction: row;
+    }
+    .outrosContact {
+        margin-top: 50px;
+        margin-left: 100px;
+    }
+
+    .outrosContact {
+        width: 400px;
+        height: 300px;
+    }
+
+    #submit {
+        padding: 10px 10px 10px;
+        width: 140px;
+    }
+
+    .SocialMediaContact {
+        margin-top: 65px;
+        margin-left: 10px;
+        gap: 20px;
+        display: flex;
+    }
+
+    .Nome {
+        height: 30px;
+        width: 400px;
+    }
+
+    .Email {
+        height: 30px;
+        width: 400px;
+    }
+    .Msg {
+        height: 30px;
+        width: 400px;
+    }
+
+    .Sobre {
+        height: 450px;
+    }
+    .container {
+        height: 290px;
+    }
+    .container div {
+        height: 290px;
+    }
+    .div1, .div2, .div3 {
+        height: 255px;
+        flex: 1;
+        justify-content: center;
+      }
+
+    .Sobre {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+    
+    .CodCont {
+        margin-top: 30px;
+    }
+    .NumeroCont {
+        margin-top: 30px;
+    }
+    .EmalCont {
+        margin-top: 30px;
+    }
+    .row {
+        align-items: center;
+    }
+    .logo2 {
+        width: 160px;
+        padding: 10px 10px 10px;
+    }
+    
+    nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px 20px;
+    }
+
+    .logos:hover .logos-slide {
+    animation-play-state: paused;
+    }
+    .Sobre h2 {
+        color: rgb(197, 157, 95);
+        font-family: "the amsterdam", sans-serif; 
+        font-weight: 01;
+        font-size: 60px;
+    }
+    .logos-slide img {
+        border-radius: 20px;
+        margin: 0 8px;
+        height: 200px;
+    }
+    .bannernos h2 {
+        font-size: 70px;
+    }
+    
+    .bannernos h3 {
+        font-size: 30px;
+    }
+    
+    .bannernos p {
+        font-size: 15px;
+    }
+    .container2 h2 {
+        font-size: 60px;
+    }
+}
+
+
+header.sticky {
+    transition: all 0.4s;
+    padding: 5px 100px;
+    background: #ff0000;
+}
+
+.Apoios2 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.apoios {
+    gap: 20px;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+
+.ContactMe {
+    align-items: center;
+    text-align: left;
+    justify-content: center;
+    display: flex;
+}
+
+.outrosContact {
+    text-align: center;
+    border-radius: 2px;
+    padding: 10px 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0) 0px 54px 55px, rgba(255, 255, 255, 0) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.05) 0px 12px 13px, rgba(0, 0, 0, 0) 0px -3px 5px;
+}
+
+.Face {
+    filter: brightness(0) saturate(100%) invert(62%) sepia(45%) saturate(500%) hue-rotate(0deg) brightness(95%) contrast(85%);
+    width: 29px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.Insta {
+    filter: brightness(0) saturate(100%) invert(62%) sepia(45%) saturate(500%) hue-rotate(0deg) brightness(95%) contrast(85%);
+    cursor: pointer;
+    width: 29px;
+    transition: all 0.4s;
+}
+
+#Youtube {
+    cursor: pointer;
+    width: 30px;
+    transition: all 0.4s;
+    filter: brightness(0) saturate(100%) invert(62%) sepia(45%) saturate(500%) hue-rotate(0deg) brightness(95%) contrast(85%);
+}
+
+#Youtube:hover {
+    transform: scale(1.05);
+}
+
+.Insta:hover {
+    transform: scale(1.05);
+}
+
+.Face:hover {
+    transform: scale(1.05);
+}
+
+#submit {
+    cursor: pointer;
+    background-color: rgb(197, 157, 95);
+    padding: 10px 10px 10px;
+    color: white;
+    border: 0px;
+    transition: all 0.4s;
+}
+
+#submit:hover {
+    background-color: rgb(24, 24, 24);
+}
+
+.Nome  {
+    
+    border-top: 10px;
+    border-right: 10px;
+    border-left: 10px;
+    border-color: rgb(197, 157, 95);
+}
+.Email {
+    border-top: 10px;
+    border-right: 10px;
+    border-left: 10px;
+    border-color: rgb(197, 157, 95);
+}
+.Msg {
+    border-top: 10px;
+    border-right: 10px;
+    border-left: 10px;
+    border-color: rgb(197, 157, 95);
+}
+
+.ContactMe h4 {
+    text-align: center;
     font-family: "Montserrat", sans-serif; 
 }
 
-.img {
-    height: 300px;
+.outrosContact h3 {
+    font-family: "Montserrat", sans-serif; 
 }
 
-.build {
+.Apoios2 h3 {
+    font-family: "Montserrat", sans-serif; 
+}
+
+.Sobre h3 {
+    font-family: "Montserrat", sans-serif; 
+    font-size: 30px;
+}
+
+.Sobre p {
+    font-weight: 100;
+    font-family: "Montserrat", sans-serif; 
+}
+
+.logoApoios {
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.bannerPrinc h2 {
+    font-family: "Montserrat", sans-serif;      
+    font-weight: 200;
+    font-size: 40px;
+}
+
+.logoApoios:hover {
+    transform: scale(1.05);
+}
+
+.hamburguer {
+    display: none;
+}
+
+.Sobre {
+    color: white;
+    font-family: "Qwitcher Grypen", cursive;
+    padding: 10px 10px 10px;
+    text-align: center;
+    width: 100%;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-image: url(https://i.ibb.co/PjTzDRd/Frame-14-1.png);
+}
+
+.Nome {
+    font-family: "Montserrat", sans-serif;    
+}
+
+.Email {
+    font-family: "Montserrat", sans-serif;   
+}
+
+.Msg {
+    font-family: "Montserrat", sans-serif;   
+}
+
+.bannerPrinc {
+    color: white;
+    padding: 10px 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 60vh;
+    filter: brightness(40%);
+    background-image: url(https://www.projetocinco.pt/u-files/2022-09-20-14-35-18-20220501-5Sentidos-Sinfonietta-70n.jpg);
+}
+
+.OutrosThree {
+    background-color: rgb(225, 225, 225);
+}
+.SinfBaixo {
+    font-size: 15px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .div1, .div2, .div3 {
+    flex: 1;
+  }
+
+
+  .div1 {
     display: flex;
     align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  .div2 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  .div3 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .div2 {
+    color: white;
+    background-color: rgb(36, 36, 36);
+  }
+
+  .bannerPrinc h2 {
+    text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.307);
+    font-size: 60px;
+  }
+.bannernos {
+    color: white;
+    background-image: url(https://i.ibb.co/10ByvSF/Frame-15-2.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 360px;
+}
+
+.bannernos h2 {
+    font-family: "the amsterdam", sans-serif;
+    font-weight: 1;
+    color: rgb(197, 157, 95);
+}
+
+.bannernos h3 {
+    font-family: "Montserrat", sans-serif;      
+}
+
+.bannernos p {
+    font-family: "Montserrat", sans-serif;  
+}
+
+.Negrito {
+    font-family: "Montserrat", sans-serif;  
+    font-weight: 800;
+}
+
+.textofino {
+    font-family: "Montserrat", sans-serif;  
+}
+
+.Mensagens {
+    display: flex;
     justify-content: center;
     flex-direction: column;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.077);
-    border-radius: 10px;
-    padding: 10px 10px 10px;
 }
 
-.princ {
-    justify-content: center;
+.logos-slide img {
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 0 8px;
+}
+
+.logos {
+    font-family: "Montserrat", sans-serif;  
+    padding: 60px 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.logos h2 {
+    margin: 0 0px 40px;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.logos-slide {
+    display: inline-block;
+    animation: 5s slide infinite linear;
+}
+
+.container2 {
+    width: 100%;
     display: flex;
     align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
 }
 
-@media (max-width: 600px) {
-    .build {
-        margin-top: 50%;
-    }
+.container2 h2 {
+    font-family: "the amsterdam", sans-serif;
+    font-weight: 1;
+    color: rgb(197, 157, 95);
 }
 
-@media (min-width: 600px){
-    .build {
-        margin-top: 20%;
-    }
+.container2 h3 {
+    font-family: "Montserrat", sans-serif;  
+}
+
+#BtnOficina {
+    font-family: "Montserrat", sans-serif;  
+    background-color: #252525b8;
+    padding: 10px 10px 10px;
+    border: 5px;
+    width: 185px;
+    transition: all 0.4s;
+    cursor: pointer;
+    border: 2.5px solid rgb(0, 0, 0);
+    margin-top: 20px;
+}
+
+#BtnOficina:hover {
+    background-color: black;
+}
+
+.footer {
+    text-align: center;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif; 
+    margin-top: 150px;
+    align-items: center;
+    width: 100%;
+    padding: 100px 15%;
+    background-color: rgb(16, 16, 16);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerlogo {
+    width: 200px;
+    border-radius: 20px;
+}
+
+.footer div{
+    text-align: center;
+}
+
+.footer div h3 {
+    font-weight: 300;
+    font-family: "the amsterdam", sans-serif;
+    color: rgb(197, 157, 95);
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.col-2 a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+    transition: all 0.2s;
+}
+
+.col-2 a:hover {
+    color: rgb(197, 157, 95);
+}
+
+#MadeBy {
+    font-family: "Montserrat", sans-serif; 
+    color: black;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(197, 157, 95);
+    padding: 10px 10px 10px;
+    width: 100%;
+    text-align: center;
+}
+
+#HugottrMade {
+    cursor: pointer;
+    color: black;
+    transition: all 0.4s;
+}
+
+#HugottrMade:hover {
+    color: white;
+}
+
+.social-icons i {
+    color: white;
+    font-size: 22px;
+    margin: 10px;
+    margin-top: 20px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.social-icons i:hover {
+    color: rgb(197, 157, 95);
+}
+
+.SocialMediaContact i {
+    cursor: pointer;
+    font-size: 25px;
+    transition: all 0.4s;
+    color: rgb(197, 157, 95);
+}
+
+.SocialMediaContact i:hover {
+    color: black;
+}
+
+#hamburguer {
+    font-size: 40px;
+    display: none;
 }
