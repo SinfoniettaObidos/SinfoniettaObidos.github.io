@@ -29,6 +29,7 @@ html {
 
 .logo {
     cursor: pointer;
+    height: 100px;
     display: none;
 }
 
@@ -96,9 +97,6 @@ header {
 }
 
 @media (max-width: 1000px) {
-    .logo {
-        width: 120px;
-    }
     .logo2 {
         width: 120px;
     }
@@ -192,11 +190,7 @@ header {
         text-align: center;
         align-items: center;
     }  
-    
-    .logo {
-        width: 200px;
-       display: flex;
-   }
+
    .logo2 {
        width: 200px;
       display: none;
@@ -235,17 +229,29 @@ header {
     .footer {
         flex-direction: column;
     }
+    .logo3 {
+        display: flex;
+    }
+    .logophone {
+        display: flex;
+        height: 120px;
+    }
+    #menuphone {
+        cursor: pointer;
+        display: flex;
+        margin-top: 50px;
+        margin-left: 40px;
+        font-size: 30px;
+    }
+    .logo {
+        display: flex;
+    }
 }
 
 @media (max-width: 580px) {
     .logo {
-         width: 200px;
         display: flex;
     }
-    .logo2 {
-        width: 200px;
-       display: none;
-   }
     .nav__links {
         display: none;
     }
@@ -275,6 +281,9 @@ header {
         margin-top: 35px;
         gap: 20px;
         display: flex;
+    }
+    .logo {
+        display: flexs;
     }
     .Email {
         height: 30px;
@@ -349,7 +358,7 @@ header {
     .logos-slide img {
         border-radius: 20px;
         margin: 0 8px;
-        height: 120px;
+        height: 180px;
     }
     .bannernos h2 {
         font-size: 40px;
@@ -372,12 +381,45 @@ header {
     .footer {
         flex-direction: column;
     }
-
-    #hamburguer {
+    .logo3 {
+        align-items: center;
         display: flex;
     }
-}
+    .col-2 li button {
+        font-size: 10px;
+    }
+    
+    .col-2 li button a {
+        font-size: 10px;
+    }
+    
+    .col-3 p {
+        font-size: 10px;
+    }
+    
+    #MadeBy p {
+        font-size: 10px;
+    }
+    
+    .footerlogo {
+        width: 200px;
+    }
 
+    .footer {
+        height: 950px;
+    }
+    .logophone {
+        display: flex;
+        height: 120px;
+    }
+    #menuphone {
+        cursor: pointer;
+        display: flex;
+        margin-top: 50px;
+        margin-left: 40px;
+        font-size: 30px;
+    }
+}
 @media (min-width:1000px) {
     #ObidosMun {
         transition: all 0.4s;
@@ -405,7 +447,7 @@ header {
 
     .outrosContact {
         width: 400px;
-        height: 300px;
+        height: 320px;
     }
 
     #submit {
@@ -506,8 +548,13 @@ header {
     .container2 h2 {
         font-size: 60px;
     }
+    .logophone {
+        display: none;
+    }
+    #menuphone {
+        display: none;
+    }
 }
-
 
 header.sticky {
     transition: all 0.4s;
@@ -577,7 +624,7 @@ header.sticky {
 
 #submit {
     cursor: pointer;
-    background-color: rgb(197, 157, 95);
+    background-color: rgb(88, 88, 88);
     padding: 10px 10px 10px;
     color: white;
     border: 0px;
@@ -674,6 +721,7 @@ header.sticky {
     font-family: "Montserrat", sans-serif;   
 }
 
+
 .bannerPrinc {
     color: white;
     padding: 10px 10px 10px;
@@ -683,11 +731,11 @@ header.sticky {
     text-align: center;
     width: 100%;
     background-size: cover;
-    background-position: center; 
+    background-position: left; 
     background-repeat: no-repeat; 
-    height: 60vh;
-    filter: brightness(40%);
-    background-image: url(https://www.projetocinco.pt/u-files/2022-09-20-14-35-18-20220501-5Sentidos-Sinfonietta-70n.jpg);
+    height: 70vh;
+    filter: brightness(80%);
+    background-image: url(https://i.ibb.co/ZVv1tXM/banner4.pnghttps://scontent.flis4-1.fna.fbcdn.net/v/t1.6435-9/57192381_1634788526656685_2269072621666566144_n.jpg?stp=dst-jpg_s600x600&_nc_cat=107&ccb=1-7&_nc_sid=f798df&_nc_ohc=7Ebl5MJKlLoQ7kNvgHmY7KT&_nc_zt=23&_nc_ht=scontent.flis4-1.fna&_nc_gid=AqJ5v_-44bFEVLaV_jDH0Gf&oh=00_AYB1nOKpKN55apajV5E_6FL_NXvNssagIBUk9NzZPKRHgg&oe=673360D7);
 }
 
 .OutrosThree {
@@ -877,16 +925,27 @@ header.sticky {
     font-weight: 100;
 }
 
-.col-2 a {
+.col-2 a button {
     display: block;
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
+    background-color: rgba(250, 235, 215, 0);
     margin-bottom: 10px;
     transition: all 0.2s;
 }
 
 .col-2 a:hover {
     color: rgb(197, 157, 95);
+    background-color: #25252500;
+}
+
+.col-2 a {
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgba(250, 235, 215, 0);
+    margin-bottom: 10px;
+    transition: all 0.2s;
 }
 
 #MadeBy {
@@ -937,4 +996,82 @@ header.sticky {
 #hamburguer {
     font-size: 40px;
     display: none;
+}
+
+.nav__links2 li button {
+    background-color: #ff000000;
+    color: white;
+}
+
+.nav__links2 li button:hover {
+    background-color: #ff000000;
+    color: rgb(197, 157, 95);
+}
+
+.ofcmusica {
+    text-align: center;
+}
+
+.logo3 {
+    height: 140px;
+    display: none;
+}
+
+.checkbtn {
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.nav-mobile {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.95);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease;
+    transform: translateY(-100%);
+    z-index: 1000;
+}
+
+#check:checked ~ .nav-mobile {
+    display: flex;
+    transform: translateY(0);
+}
+
+.nav-mobile li button {
+    color: #000;
+    padding: 1.5rem 2rem;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.nav-mobile li button:hover {
+    color: rgb(197, 157, 95);
+}
+
+@media only screen and (max-width: 1000px) {
+    .checkbtn {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 42px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .checkbtn {
+        display: none;
+    }
+}
+
+nav i {
+    color: #000000;
 }
