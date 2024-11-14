@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
 @import url('https://fonts.cdnfonts.com/css/the-amsterdam');
 
+
 * {
     text-decoration: none;
     list-style: none;
@@ -155,7 +156,7 @@ header {
         height: 300px;
     }
     .container {
-        flex-direction: column;
+        flex-direction: row;
     }
     .div1, .div2, .div3 {
         min-height: 200px;
@@ -853,11 +854,6 @@ header.sticky {
     }
 }
 
-.logos-slide {
-    display: inline-block;
-    animation: 5s slide infinite linear;
-}
-
 .container2 {
     width: 100%;
     display: flex;
@@ -1075,3 +1071,90 @@ header.sticky {
 nav i {
     color: #000000;
 }
+
+.galeria div img {
+    width: 100%;
+}
+
+.slideshow-container {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    background-color: #1b1b1b;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .prev {
+    left: 0px;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.548);
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.2s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  
+  .slideshow-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .galeria2 {
+    text-align: center;
+    margin: 40px 0px;
+    font-family: "Montserrat", sans-serif; 
+  }
