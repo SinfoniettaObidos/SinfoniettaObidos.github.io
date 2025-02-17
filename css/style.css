@@ -650,5 +650,6 @@ form {
     position: relative;
     z-index: -1; /* Behind other elements */
     font-size: 18px;
+    font-weight: 500;
     margin: 90px 90px 90px;
 }
