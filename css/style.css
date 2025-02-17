@@ -99,6 +99,9 @@ header ul li:hover {
         width: 100%;
         height: 45vh;
     }
+    .titulo {
+        font-size: 25px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -595,7 +598,10 @@ form {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) {~
+    .titulo {
+        font-size: 25px;
+    }
     .icons {
         display: inline-flex;
     }
@@ -649,7 +655,6 @@ form {
 .titulo {
     position: relative;
     z-index: -1; /* Behind other elements */
-    font-size: 18px;
     font-weight: 500;
     margin: 90px 90px 90px;
 }
