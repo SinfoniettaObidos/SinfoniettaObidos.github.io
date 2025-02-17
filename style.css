@@ -1,1164 +1,654 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,650;1,650&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.cdnfonts.com/css/the-amsterdam');
-
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
-    text-decoration: none;
     list-style: none;
+    text-decoration: none;
+    box-sizing: border-box; 
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
-}
-
-body {
-    overflow-x: hidden; /* Hide horizontal scrollbar */
-}
-
-html {
-    scroll-behavior: smooth;
-   }
-
-.nav__links {
-    font-family: "Montserrat", sans-serif; 
-    align-items: center;
-    display: flex;
-    position: relative;
-    cursor: pointer;
-}
-
-.nav__links li a {
-    color: rgb(0, 0, 0);
-}
-
-
-.logo {
-    cursor: pointer;
-    height: 100px;
-    display: none;
-}
-
-.logo2 {
-    cursor: pointer;
-    transition: all 0.4s;
-    display: flex;
-}
-
-.logo2:hover {
-    padding: 15px 15px 15px;
-}
-
-nav {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    min-height: 50px;
-    display: flex;
-    justify-content: center;
-    background-color: rgb(255, 255, 255);
-    width: 100%;
 }
 
 header {
-    transition: all 0.4s;
+    backdrop-filter: blur(7px) saturate(180%);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    display: flex;
+    height: 115px;
+    top: 0;
+    right: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
     position: fixed;
+}
+
+header img{
+    width: 115px;
+}
+
+header::before{
+    backdrop-filter: blur(7px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
-    width: 100%;
+    z-index: -1;
+}
+
+
+header ul {
+    padding: 0 20px 0px;
+    align-items: center;
+}
+
+header ul li {
+    font-family: 'Montserrat';
+    padding: 13px 13px 13px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+header ul li:hover {
+    font-weight: 600;
+
+}
+
+.Div { 
+    backdrop-filter: blur(2px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    height: 300px;
+    width: 300px;
+}
+
+.BannerPrincipal {
+    color: white;
+    padding: 10px 10px 10px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    z-index: 10000;
-}
-
-.btnNav2 {
-    cursor: pointer;
-    font-family: "Montserrat", sans-serif; 
-    border: 0px;
-    padding: 10px 10px 10px;
-    transition: all 0.2s;
-    background-color: white;
-}
-
-.btnNav2:hover {
-    background-color: rgb(234, 234, 234);
-}
-
-#btnNav {
-    color: rgb(0, 0, 0);
-    transition: all 0.2s;
-    padding: 10px 10px 10px;
-    border-radius: 2px;
-}
-
-#btnNav:hover {
-    background-color: rgb(234, 234, 234);
-}
-
-.bodycontact {
     align-items: center;
     text-align: center;
-    justify-content: center;
-    padding: 10px;
-    display: flex;
+    width: 100%;
+    background-size: cover;
+    background-position: unset; 
+    background-repeat: no-repeat; 
+    height: 45vh;
+    background-image: url(/assets/Images/Other/Frame4.webp);
 }
 
-@media (max-width: 1000px) {
-    .logo2 {
-        width: 120px;
-    }
-    .nav__links {
-        font-size: 12px;
-    }
-
-    #ObidosMun {
-        width: 160px;
-    }
-    #Josefa {
-        width: 170px;
-    }
-    #EspacoO {
-        width: 160px;
-    }
-    #ObidosDetalhes {
-        width: 120px;
-    }
-    .apoios {
-        display: flex;
-        flex-direction: column;
-    }
-    .ContactMe {
-        flex-direction: column;
-    }
-    .outrosContact h3 {
-        font-size: 15px;
-    }
-
-    .outrosContact {
-        width: 330px;
-        height: 300px;
-    }
-
-    .SocialMediaContact {
-        margin-top: 45px;
-        gap: 20px;
-        display: flex;
-        justify-content: center;
-    }
-    
-    #Three {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 300px;
-    }
-    
-    #Three div {
-        height: 300px;
-        width: 335px;
-        margin: 10px;
-    }
-    .Sobre {
-        height: 300px;
-    }
-    .container {
-        flex-direction: row;
-    }
-    .div1, .div2, .div3 {
-        min-height: 200px;
-        align-items: center;
-        justify-content: center;
-        flex: 1;
-      }
-
-    .CodCont {
-        margin-top: 30px;
-    }
-    .NumeroCont {
-        margin-top: 30px;
-    }
-    .EmalCont {
-        margin-top: 30px;
-    }
-    .Email {
-        height: 30px;
-        min-width: 300px;
-    }
-    .Msg {
-        height: 30px;
-        min-width: 300px;
-    }
-    .Nome {
-        height: 30px;
-        min-width: 300px;
-    }
-    .row {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }  
-
-   .logo2 {
-       width: 200px;
-      display: none;
-   }    
-   .nav__links {
-    display: none;
-   }
-   .Sobre h2 {
-    color: rgb(197, 157, 95);
-    font-family: "the amsterdam", sans-serif; 
-    font-weight: 01;
+.BannerPrincipal h3 {
+    font-family: Lexend;
     font-size: 30px;
-}
-    .logos-slide img {
-    border-radius: 20px;
-    margin: 0 8px;
-    height: 200px;
-    } 
-    .bannernos h2 {
-        font-size: 70px;
-    }
-    
-    .bannernos h3 {
-        font-size: 30px;
-    }
-    
-    .bannernos p {
-        font-size: 15px;
-    }  
-    #submit {
-        width: 300px;
-    }
-    .container2 h2 {
-        font-size: 65px;
-    }
-    .footer {
-        flex-direction: column;
-    }
-    .logo3 {
-        display: flex;
-    }
-    .logophone {
-        display: flex;
-        height: 120px;
-    }
-    #menuphone {
-        cursor: pointer;
-        display: flex;
-        margin-top: 50px;
-        margin-left: 40px;
-        font-size: 30px;
-    }
-    .logo {
-        display: flex;
-    }
+    font-weight: 600;
+    text-shadow: 0em 0em 0.2em rgb(46, 46, 46)
 }
 
-@media (max-width: 580px) {
-    .logo {
-        display: flex;
-    }
-    .nav__links {
+
+@media (min-width: 1200px) {
+
+    .burger { 
         display: none;
     }
-    #ObidosMun {
-        width: 130px;
-    }
-    #Josefa {
-        width: 140px;
-    }
-    #EspacoO {
-        width: 130px;
-    }
-    #ObidosDetalhes {
-        width: 100px;
-    }
-    .apoios {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .outrosContact {
-        width: 90%;
-        height: 450px;
-    }
-
-    .SocialMediaContact {
-        margin-top: 35px;
-        gap: 20px;
-        display: flex;
-    }
-    .logo {
-        display: flexs;
-    }
-    .Email {
-        height: 30px;
-        min-width: 300px;
-    }
-    .Msg {
-        height: 30px;
-        min-width: 300px;
-    }
-    .Nome {
-        height: 30px;
-        min-width: 300px;
-    }
-
-    .CodCont {
-        margin-top: 80px;
-    }
-    .NumeroCont {
-        margin-top: 80px;
-    }
-    .EmalCont {
-        margin-top: 80px;
-    }
-    #submit {
-        width: 300px;
-    }
-
-    .Sobre {
-        display: flex;
-        align-items: center;
-    }
-    #Three {
-        flex-direction: column;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 600px;
-    }
-    
-    #Three div {
-        height: 300px;
+    .BannerPrincipalGaleria {
         width: 100%;
-        margin: 5px;
-    }
-    .Sobre {
-        height: 410px;
-    }
-    .Sobre p {
-        font-size: 12px;
-    }
-
-    .container {
-        flex-direction: column;
-    }
-    .div1, .div2, .div3 {
-        min-height: 200px;
-        align-items: center;
-        justify-content: center;
-        flex: 1;
-      }
-
-    .row {
-        flex-direction: column;
-        text-align: center;
-    }
-    .Sobre h2 {
-        color: rgb(197, 157, 95);
-        font-family: "the amsterdam", sans-serif; 
-        font-weight: 01;
-        font-size: 45px;
-    }
-    .logos-slide img {
-        border-radius: 20px;
-        margin: 0 8px;
-        height: 180px;
-    }
-    .bannernos h2 {
-        font-size: 40px;
-    }
-    
-    .bannernos h3 {
-        font-size: 24px;
-    }
-    
-    .bannernos p {
-        margin-top: 40px;
-        font-size: 15px;
-    }
-    .bannernos {
-        text-align: center;
-    }
-    .container2 h2 {
-        font-size: 45px;
-    }
-    .footer {
-        flex-direction: column;
-    }
-    .logo3 {
-        align-items: center;
-        display: flex;
-    }
-    .col-2 li button {
-        font-size: 10px;
-    }
-    
-    .col-2 li button a {
-        font-size: 10px;
-    }
-    
-    .col-3 p {
-        font-size: 10px;
-    }
-    
-    #MadeBy p {
-        font-size: 10px;
-    }
-    
-    .footerlogo {
-        width: 200px;
-    }
-
-    .footer {
-        height: 950px;
-    }
-    .logophone {
-        display: flex;
-        height: 120px;
-    }
-    #menuphone {
-        cursor: pointer;
-        display: flex;
-        margin-top: 50px;
-        margin-left: 40px;
-        font-size: 30px;
-    }
-}
-@media (min-width:1000px) {
-    #ObidosMun {
-        transition: all 0.4s;
-        width: 110px;
-    }
-    #Josefa {
-        width: 120px;
-    }
-    #EspacoO {
-        width: 110px;
-    }
-    #ObidosDetalhes {
-        width: 70px;
-    }
-    #ObdCriativo {
-        width: 180px;
-    }
-    .ContactMe {
-        flex-direction: row;
-    }
-    .outrosContact {
-        margin-top: 50px;
-        margin-left: 100px;
-    }
-
-    .outrosContact {
-        width: 400px;
-        height: 320px;
-    }
-
-    #submit {
-        padding: 10px 10px 10px;
-        width: 140px;
-    }
-
-    .SocialMediaContact {
-        margin-top: 65px;
-        margin-left: 10px;
-        gap: 20px;
-        display: flex;
-    }
-
-    .Nome {
-        height: 30px;
-        width: 400px;
-    }
-
-    .Email {
-        height: 30px;
-        width: 400px;
-    }
-    .Msg {
-        height: 30px;
-        width: 400px;
-    }
-
-    .Sobre {
-        height: 450px;
-    }
-    .container {
-        height: 290px;
-    }
-    .container div {
-        height: 290px;
-    }
-    .div1, .div2, .div3 {
-        height: 255px;
-        flex: 1;
-        justify-content: center;
-      }
-
-    .Sobre {
-        justify-content: center;
-        display: flex;
-        align-items: center;
-    }
-    
-    .CodCont {
-        margin-top: 30px;
-    }
-    .NumeroCont {
-        margin-top: 30px;
-    }
-    .EmalCont {
-        margin-top: 30px;
-    }
-    .row {
-        align-items: center;
-    }
-    .logo2 {
-        width: 160px;
-        padding: 10px 10px 10px;
-    }
-    
-    nav {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 10px 20px;
-    }
-
-    .logos:hover .logos-slide {
-    animation-play-state: paused;
-    }
-    .Sobre h2 {
-        color: rgb(197, 157, 95);
-        font-family: "the amsterdam", sans-serif; 
-        font-weight: 01;
-        font-size: 60px;
-    }
-    .logos-slide img {
-        border-radius: 20px;
-        margin: 0 8px;
-        height: 200px;
-    }
-    .bannernos h2 {
-        font-size: 70px;
-    }
-    
-    .bannernos h3 {
-        font-size: 30px;
-    }
-    
-    .bannernos p {
-        font-size: 15px;
-    }
-    .container2 h2 {
-        font-size: 60px;
-    }
-    .logophone {
-        display: none;
-    }
-    #menuphone {
-        display: none;
+        height: 45vh;
     }
 }
 
-header.sticky {
-    transition: all 0.4s;
-    padding: 5px 100px;
-    background: #ff0000;
+@media (min-width: 768px) {
+    header ul {
+        display: flex;
+    }
 }
 
-.Apoios2 {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+@media (max-width: 1200px) {
+
+    .burger { 
+        display: flex;
+    }
+    .BannerPrincipalGaleria {
+        width: 100%;
+        height: 30vh;
+    }
+    
 }
 
-.apoios {
-    gap: 20px;
-    justify-content: space-around;
+#Conc{ 
+    font-family: 'Lexend';
+    font-weight: 500;
+}
+
+.Card { 
     display: flex;
     align-items: center;
+    margin: 3vh 0;
+    position: relative;
 }
 
-.ContactMe {
-    align-items: center;
-    text-align: left;
+.CardImage1 {  
+    background-image: url(/assets/Images/Other/CasaDaMusica.webp);
+    border-radius: 8px;
+    width: 14rem; /* Replace vh with rem for consistent scaling */
+    height: 20rem; /* Use rem or auto scaling for height */
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.WhiteCard{ 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    backdrop-filter: blur(2px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.822);
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    width: calc(100% - 1rem); /* Dynamic width relative to the container */
+    padding: 1rem; /* Use rem for consistent padding */
+    height: auto; /* Adjust height based on content */
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 15px;
+}
+
+.WhiteCard h3 { 
+    font-weight: 700;
+    font-size: 17px;
+    font-family: 'Lexend';
+}
+
+.WhiteCard p { 
+    font-family: 'Lexend';
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.DivConcertos { 
+    font-family: 'Lexend';
+    padding: 10px 10px;
+}
+
+.CardsConcertos { 
+    display: flex;
     justify-content: center;
+}
+
+.FooterLogos { 
     display: flex;
+    align-items: center;
 }
 
-.outrosContact {
-    text-align: center;
-    border-radius: 2px;
+.LogoFooter1 { 
+    height: 4rem;
+}
+
+.LogoFooter2 { 
+    height: 5rem;
+}
+
+.LogoFooter3 { 
+    height: 6rem;
+}
+
+.LogoFooter4 { 
+    height: 5rem;
+}
+
+.FormDiv{ 
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+}
+
+.Newsletter h3 { 
+    font-family: 'Lexend';
+    font-size: 2rem;
+    padding: 0 0.6rem;
+}
+
+.email  { 
+    font-family: 'Lexend';
     padding: 10px 10px 10px;
-    box-shadow: rgba(0, 0, 0, 0) 0px 54px 55px, rgba(255, 255, 255, 0) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.05) 0px 12px 13px, rgba(0, 0, 0, 0) 0px -3px 5px;
+    width: 20rem;
+    border-radius: 5px;
+    border: 1px solid black;
 }
 
-.Face {
-    filter: brightness(0) saturate(100%) invert(62%) sepia(45%) saturate(500%) hue-rotate(0deg) brightness(95%) contrast(85%);
-    width: 29px;
+.submit{ 
+    font-family: 'Lexend';
+    padding: 10px 10px 10px;
+    width: 20rem;
+    border: 1px solid black;
+    border-radius: 5px;
     cursor: pointer;
-    transition: all 0.4s;
+    margin: 1rem 0 0;
+    transition: all 0.2s;
 }
 
-.Insta {
-    filter: brightness(0) saturate(100%) invert(62%) sepia(45%) saturate(500%) hue-rotate(0deg) brightness(95%) contrast(85%);
+.submit:hover{ 
+    background-color: black;
+    color: white;
+}
+
+form{ 
+    display: flex;
+    flex-direction: column;
+}
+
+.ContactosNews{ 
+    display: flex;
+    justify-content: space-between;
+}
+
+.SocialMediaContact{ 
+    display: flex;
+    font-size: 20px;
+    color: white;
     cursor: pointer;
-    width: 29px;
-    transition: all 0.4s;
 }
 
-#Youtube {
+.SocialMediaContact i{ 
+    padding: 6px 6px 6px;
+}
+
+html, body {
+    height: 100%; /* Ensure the full height of the viewport is covered */
+}
+
+body {
+    flex: 1;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(22, 22, 22);
+    justify-content: space-evenly;
+    padding: 1rem 20px 20px;
+    margin-top: auto; /* Pushes the footer to the bottom */
+}
+
+footer ul li h3{ 
+    font-family: 'Lexend';
+    font-weight: 700;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.SocialMediaContact{ 
+    display: flex;
+    justify-content: center;
+}
+
+footer div h3{ 
+    font-family: 'Lexend';
+    font-weight: 700;
+    color: white;
+    font-size: 1.3rem;
+}
+
+footer div h4{ 
+    font-family: 'Lexend';
+    font-weight: 300;
+    color: white;
+}
+
+footer ul li h4{ 
+    font-family: 'Lexend';
+    font-weight: 300;
+    color: white;
+    transition: all 0.2s;
     cursor: pointer;
-    width: 30px;
-    transition: all 0.4s;
-    filter: brightness(0) saturate(100%) invert(62%) sepia(45%) saturate(500%) hue-rotate(0deg) brightness(95%) contrast(85%);
 }
 
-#Youtube:hover {
-    transform: scale(1.05);
+footer ul li h4:hover{ 
+    font-weight: 600;
 }
 
-.Insta:hover {
-    transform: scale(1.05);
+@media (max-width: 1200px) {
+    footer{ 
+        flex-direction: column;
+    }
+    footer div { 
+        padding: 3rem;
+    }
+    footer ul { 
+        padding: 1.5rem;
+    }
 }
 
-.Face:hover {
-    transform: scale(1.05);
+footer ul li { 
+    padding: 5px 5px 5px;
 }
 
-#submit {
-    cursor: pointer;
-    background-color: rgb(88, 88, 88);
+.Madeby { 
+    display: flex;
+    justify-content: center;
     padding: 10px 10px 10px;
     color: white;
-    border: 0px;
-    transition: all 0.4s;
+    background-color: rgb(15, 15, 15);
 }
 
-#submit:hover {
-    background-color: rgb(24, 24, 24);
+.Madeby h5 { 
+    font-weight: 300;
+    font-family: 'Lexend';
 }
 
-.Nome  {
-    
-    border-top: 10px;
-    border-right: 10px;
-    border-left: 10px;
-    border-color: rgb(197, 157, 95);
-}
-.Email {
-    border-top: 10px;
-    border-right: 10px;
-    border-left: 10px;
-    border-color: rgb(197, 157, 95);
-}
-.Msg {
-    border-top: 10px;
-    border-right: 10px;
-    border-left: 10px;
-    border-color: rgb(197, 157, 95);
-}
-
-.ContactMe h4 {
-    text-align: center;
-    font-family: "Montserrat", sans-serif; 
-}
-
-.outrosContact h3 {
-    font-family: "Montserrat", sans-serif; 
-}
-
-.Apoios2 h3 {
-    font-family: "Montserrat", sans-serif; 
-}
-
-.Sobre h3 {
-    font-family: "Montserrat", sans-serif; 
-    font-size: 30px;
-}
-
-.Sobre p {
-    font-weight: 100;
-    font-family: "Montserrat", sans-serif; 
-}
-
-.logoApoios {
+.Madeby a { 
+    font-family: 'Lexend';
+    color: white;
     cursor: pointer;
     transition: all 0.2s;
 }
 
-.bannerPrinc h2 {
-    font-family: "Montserrat", sans-serif;      
-    font-weight: 200;
-    font-size: 40px;
+.Madeby a:hover { 
+    font-weight: 600;
 }
 
-.logoApoios:hover {
-    transform: scale(1.05);
+.burger { 
+    font-size: 45px;
+    padding: 0 40px;
+    align-items: center;
 }
 
-.hamburguer {
-    display: none;
+a { 
+    color: black;
 }
 
-.Sobre {
-    color: white;
-    font-family: "Qwitcher Grypen", cursive;
+.GaleriaAnos div h2{ 
+    font-family: 'Lexend';
     padding: 10px 10px 10px;
-    text-align: center;
-    width: 100%;
-    background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-image: url(https://i.ibb.co/PjTzDRd/Frame-14-1.png);
 }
 
-.Nome {
-    font-family: "Montserrat", sans-serif;    
-}
-
-.Email {
-    font-family: "Montserrat", sans-serif;   
-}
-
-.Msg {
-    font-family: "Montserrat", sans-serif;   
-}
-
-
-.bannerPrinc {
-    color: white;
-    padding: 10px 10px 10px;
+.Vilanatal2023UL{ 
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    background-size: cover;
-    background-position: left; 
-    background-repeat: no-repeat; 
-    height: 70vh;
-    filter: brightness(80%);
-    background-image: url(https://i.ibb.co/ZVv1tXM/banner4.pnghttps://scontent.flis4-1.fna.fbcdn.net/v/t1.6435-9/57192381_1634788526656685_2269072621666566144_n.jpg?stp=dst-jpg_s600x600&_nc_cat=107&ccb=1-7&_nc_sid=f798df&_nc_ohc=7Ebl5MJKlLoQ7kNvgHmY7KT&_nc_zt=23&_nc_ht=scontent.flis4-1.fna&_nc_gid=AqJ5v_-44bFEVLaV_jDH0Gf&oh=00_AYB1nOKpKN55apajV5E_6FL_NXvNssagIBUk9NzZPKRHgg&oe=673360D7);
+    flex-wrap: wrap;
 }
 
-.OutrosThree {
-    background-color: rgb(225, 225, 225);
+.Vilanatal2023UL li{ 
+    display: flex;
 }
-.SinfBaixo {
+
+
+.Vilanatal2023UL img{ 
+    padding: 10px 10px 10px;
+    height: 15rem;
+    border-radius: 20px;
+    margin: 10px 10px 10px;
+}
+
+.GaleriaAnos{ 
+    margin: 25px 0px 25px;
+}
+
+.SobreTexto h3{ 
+    font-family: "Lexend";
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.SobreTexto p{ 
+    font-family: "Lexend";
+    font-weight: 300;
     font-size: 15px;
 }
 
-.container {
+.MaestroDiv img{ 
+    height: 305px;
+}
+
+.MaestroDiv{ 
     display: flex;
-    justify-content: space-between;
-  }
-  
-  .div1, .div2, .div3 {
-    flex: 1;
-  }
+    text-align: center;
+    align-items: center;
+}
 
-
-  .div1 {
+.DivPrincipalSobre { 
     display: flex;
     align-items: center;
-    text-align: center;
-    flex-direction: column;
-  }
-  .div2 {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-  }
-  .div3 {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-  }
+    justify-content: center;
+    gap: 100px;
+    margin: 20px 20px 20px;
+}
 
-  .div2 {
+.MaestroFernando{ 
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.MaestroFernando h2{ 
+    font-family: "Lexend";
+    font-weight: 700;
+}
+
+.MaestroFernando h3{ 
+    font-family: "Lexend";
+    font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    .DivPrincipalSobre { 
+        display: flex;
+        align-items: center;
+        margin: 20px 20px 20px;
+        flex-direction: column;
+    }
+
+    .MaestroFernando h3{ 
+        font-family: "Lexend";
+        font-weight: 400;
+        font-size: 13px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .MaestroFernando h3{ 
+        font-family: "Lexend";
+        font-weight: 400;
+        font-size: 20px;
+    }
+    
+}
+
+.FormDiv{ 
+    display: flex;
+    justify-content: center;
+}
+
+form { 
+    display: flex;
+    gap: 10px;
+}
+
+.Mensagem{ 
+    border-radius: 5px;
+    border: 1px solid black;
+    height: 80px;
+    padding: 10px 10px 10px;
+    font-size: 13px;
+    font-family: "Lexend";
+}
+
+.Email{ 
+    border-radius: 5px;
+    border: 1px solid black;
+    font-family: "Lexend";
+    font-weight: 400;
+    height: 40px;
+    font-size: 13px;
+    padding: 10px 10px 10px;
+}
+
+.Name{ 
+    border-radius: 5px;
+    border: 1px solid black;
+    font-family: "Lexend";
+    font-weight: 400;
+    padding: 10px 10px 10px;
+    height: 40px;
+    font-size: 13px;
+}
+
+.Submit{ 
+    border-radius: 5px;
+    border: 1px solid black;
+    font-family: "Lexend";
+    font-weight: 400;
+    padding: 10px 10px 10px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.Submit:hover{ 
+    background-color: black;
     color: white;
-    background-color: rgb(36, 36, 36);
-  }
+}
+.LogotipoLista{ 
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 
-  .bannerPrinc h2 {
-    text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.307);
-    font-size: 60px;
-  }
-.bannernos {
+.LogotipoLista img{ 
+    padding: 10px 10px 10px;
+    border-radius: 5px;
+    background-color: white;
+    width: fit-content;
+    height: 90px;
+}
+
+
+@media (max-width: 1200px) {
+    .LogotipoUL{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+}
+
+@media (min-width: 1200px) {
+
+    .LogotipoLista{ 
+        flex-direction: column;
+    }
+    
+}
+
+.ApoiosTexto{ 
     color: white;
-    background-image: url(https://i.ibb.co/10ByvSF/Frame-15-2.png);
+    font-family: "Lexend";
+}
+
+.DivPrincipalSobre{ 
+    margin: 100px 100px 100px;
+}
+
+.Madeby{ 
+    gap: 6px;
+}
+
+.BannerForm{
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: left;
+    text-align: center;
     width: 100%;
     background-size: cover;
-    background-position: center; 
+    background-position: unset; 
     background-repeat: no-repeat; 
-    height: 360px;
+    height: 45vh;
 }
 
-.bannernos h2 {
-    font-family: "the amsterdam", sans-serif;
-    font-weight: 1;
-    color: rgb(197, 157, 95);
-}
-
-.bannernos h3 {
-    font-family: "Montserrat", sans-serif;      
-}
-
-.bannernos p {
-    font-family: "Montserrat", sans-serif;  
-}
-
-.Negrito {
-    font-family: "Montserrat", sans-serif;  
-    font-weight: 800;
-}
-
-.textofino {
-    font-family: "Montserrat", sans-serif;  
-}
-
-.Mensagens {
+.BannerForm{ 
     display: flex;
-    justify-content: center;
-    flex-direction: column;
 }
 
-.logos-slide img {
-    border-radius: 20px;
+.icons{ 
+    font-size: 3.5rem;
     cursor: pointer;
-    margin: 0 8px;
+    display: none;
+    right: 5%;
+    position: absolute;
 }
 
-.logos {
-    font-family: "Montserrat", sans-serif;  
-    padding: 60px 0px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-align: center;
+#check { 
+    display: none;
 }
 
-.logos h2 {
-    margin: 0 0px 40px;
-}
-
-@keyframes slide {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-50%);
+@media (max-width: 992px) {
+    header {
+        padding: 1.3rem 5%;
     }
 }
 
-.container2 {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 400px;
-}
-
-.container2 h2 {
-    font-family: "the amsterdam", sans-serif;
-    font-weight: 1;
-    color: rgb(197, 157, 95);
-}
-
-.container2 h3 {
-    font-family: "Montserrat", sans-serif;  
-}
-
-#BtnOficina {
-    font-family: "Montserrat", sans-serif;  
-    background-color: #252525b8;
-    padding: 10px 10px 10px;
-    border: 5px;
-    width: 185px;
-    transition: all 0.4s;
-    cursor: pointer;
-    border: 2.5px solid rgb(0, 0, 0);
-    margin-top: 20px;
-}
-
-#BtnOficina:hover {
-    background-color: black;
-}
-
-.footer {
-    text-align: center;
-    justify-content: center;
-    font-family: "Montserrat", sans-serif; 
-    margin-top: 150px;
-    align-items: center;
-    width: 100%;
-    padding: 100px 15%;
-    background-color: rgb(16, 16, 16);
-    color: white;
-    display: flex;
-    justify-content: space-between;
-}
-
-.footerlogo {
-    width: 200px;
-    border-radius: 20px;
-}
-
-.footer div{
-    text-align: center;
-}
-
-.footer div h3 {
-    font-weight: 300;
-    font-family: "the amsterdam", sans-serif;
-    color: rgb(197, 157, 95);
-    font-size: 40px;
-    font-weight: 100;
-}
-
-.col-2 a button {
-    display: block;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    background-color: rgba(250, 235, 215, 0);
-    margin-bottom: 10px;
-    transition: all 0.2s;
-}
-
-.col-2 a:hover {
-    color: rgb(197, 157, 95);
-    background-color: #25252500;
-}
-
-.col-2 a {
-    display: block;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    background-color: rgba(250, 235, 215, 0);
-    margin-bottom: 10px;
-    transition: all 0.2s;
-}
-
-#MadeBy {
-    font-family: "Montserrat", sans-serif; 
-    color: black;
-    display: flex;
-    justify-content: center;
-    background-color: rgb(197, 157, 95);
-    padding: 10px 10px 10px;
-    width: 100%;
-    text-align: center;
-}
-
-#HugottrMade {
-    cursor: pointer;
-    color: black;
-    transition: all 0.4s;
-}
-
-#HugottrMade:hover {
-    color: white;
-}
-
-.social-icons i {
-    color: white;
-    font-size: 22px;
-    margin: 10px;
-    margin-top: 20px;
-    transition: all 0.2s;
-    cursor: pointer;
-}
-
-.social-icons i:hover {
-    color: rgb(197, 157, 95);
-}
-
-.SocialMediaContact i {
-    cursor: pointer;
-    font-size: 25px;
-    transition: all 0.4s;
-    color: rgb(197, 157, 95);
-}
-
-.SocialMediaContact i:hover {
-    color: black;
-}
-
-#hamburguer {
-    font-size: 40px;
-    display: none;
-}
-
-.nav__links2 li button {
-    background-color: #ff000000;
-    color: white;
-}
-
-.nav__links2 li button:hover {
-    background-color: #ff000000;
-    color: rgb(197, 157, 95);
-}
-
-.ofcmusica {
-    text-align: center;
-}
-
-.logo3 {
-    height: 140px;
-    display: none;
-}
-
-.checkbtn {
-    font-size: 40px;
-    cursor: pointer;
-}
-
-.nav-mobile {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    background-color: rgba(255, 255, 255, 0.95);
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.5s ease;
-    transform: translateY(-100%);
-    z-index: 1000;
-}
-
-#check:checked ~ .nav-mobile {
-    display: flex;
-    transform: translateY(0);
-}
-
-.nav-mobile li button {
-    color: #000;
-    padding: 1.5rem 2rem;
-    background-color: transparent;
-    border: none;
-    font-size: 1.5rem;
-    transition: color 0.3s ease;
-    cursor: pointer;
-}
-
-.nav-mobile li button:hover {
-    color: rgb(197, 157, 95);
-}
-
-@media only screen and (max-width: 1000px) {
-    .checkbtn {
-        display: block;
+@media (max-width: 768px) {
+    .icons {
+        display: inline-flex;
+    }
+    
+    .navbar {
         position: absolute;
-        top: 30px;
-        right: 42px;
+        top: 115px;
+        left: 0;
+        overflow: hidden;
+        height: 0;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.75);
+        border: 1px solid rgb(255, 255, 255);
+        backdrop-filter: blur(7px) saturate(180%);
+        transition: .3s ease;
     }
-}
 
-@media only screen and (min-width: 1000px) {
-    .checkbtn {
+    header ul li {
+        display: block;
+        font-size: 1.1rem;
+        margin: 3rem 0;
+        font-weight: 600;
+        text-align: center;
+        transition: 0.3s ease;
+    }
+    
+    .icons #close-icon {
         display: none;
     }
+
+    #check:checked ~ .icons #menu-icon {
+        display: none;
+    }
+
+    #check:checked ~ .icons #close-icon {
+        display: block;
+    }
+
+    #check:checked ~ .navbar {
+        height: 29rem;
+    }
+    #check:checked ~ .navbar .titulo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Center it properly */
+        z-index: -1; /* Keep behind other elements */
+    }
 }
 
-nav i {
-    color: #000000;
-}
-
-.galeria div img {
-    width: 100%;
-}
-
-.slideshow-container {
-    max-width: 500px;
+.titulo {
     position: relative;
-    margin: auto;
-  }
-  
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
-  }
-  
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    background-color: #1b1b1b;
-    font-weight: bold;
+    z-index: -1; /* Behind other elements */
     font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-
-  .prev {
-    left: 0px;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.548);
-  }
-  
-  /* The dots/bullets/indicators */
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.2s ease;
-  }
-  
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-  
-  /* Fading animation */
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-
-  
-  .slideshow-container {
-    display: flex;
-    justify-content: center;
-  }
-
-  .galeria2 {
-    text-align: center;
-    margin: 40px 0px;
-    font-family: "Montserrat", sans-serif; 
-  }
+    margin: 90px 90px 90px;
+}
