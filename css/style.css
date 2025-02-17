@@ -12,7 +12,7 @@
 
 header {
     backdrop-filter: blur(7px) saturate(180%);
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgb(255, 255, 255);
     border: 1px solid rgba(209, 213, 219, 0.3);
     display: flex;
     height: 115px;
@@ -596,12 +596,13 @@ form {
 }
 
 @media (max-width: 768px) {
-    .icons{
+    .icons {
         display: inline-flex;
     }
+    
     .navbar {
         position: absolute;
-        top: 100%;
+        top: 115px;
         left: 0;
         overflow: hidden;
         height: 0;
@@ -609,7 +610,7 @@ form {
         background-color: rgba(255, 255, 255, 0.75);
         border: 1px solid rgb(255, 255, 255);
         backdrop-filter: blur(7px) saturate(180%);
-        transition: .3 ease;
+        transition: .3s ease;
     }
 
     header ul li {
@@ -618,19 +619,36 @@ form {
         margin: 3rem 0;
         font-weight: 600;
         text-align: center;
-        transition: 0.3 ease;
+        transition: 0.3s ease;
     }
     
     .icons #close-icon {
         display: none;
     }
-    #check:checked~.icons #menu-icon{ 
+
+    #check:checked ~ .icons #menu-icon {
         display: none;
     }
-    #check:checked~.icons #close-icon{ 
+
+    #check:checked ~ .icons #close-icon {
         display: block;
     }
-    #check:checked~.navbar{ 
+
+    #check:checked ~ .navbar {
         height: 29rem;
     }
+    #check:checked ~ .navbar .titulo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Center it properly */
+        z-index: -1; /* Keep behind other elements */
+    }
+}
+
+.titulo {
+    position: relative;
+    z-index: -1; /* Behind other elements */
+    font-size: 18px;
+    margin: 90px 90px 90px;
 }
