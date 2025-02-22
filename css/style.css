@@ -400,6 +400,7 @@ a {
     font-weight: 200;
     font-size: 45px;
     margin-bottom: 50px;
+    color: rgb(204, 204, 9);
 }
 
 .SobreTexto p{ 
@@ -523,11 +524,7 @@ form {
     color: white;
 }
 .LogotipoLista{ 
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+
 }
 
 .LogotipoLista img{ 
@@ -561,7 +558,7 @@ form {
     color: rgb(255, 255, 255);
     font-family: 'the amsterdam';
     font-weight: 200;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 .DivPrincipalSobre{ 
@@ -679,6 +676,7 @@ form {
     font-weight: 200;
     font-size: 55px;
     margin-bottom: 50px;
+    color: rgb(204, 204, 9);
 }
 
 #VilaNatalTitulo{
@@ -686,24 +684,60 @@ form {
     font-weight: 200;
     font-size: 55px;
     margin-bottom: 50px;
+    color: rgb(204, 204, 9);
 }
 
 .GaleriaAnos{
     text-align: center;
 }
 
-#Sinfoniettadobidos{
-    margin-top: 100px;
-    font-family: "the amsterdam";
-    font-weight: 100;
-    font-size: 50px;
-    text-shadow: rgb(0, 0, 0) 1px 0 10px;
-    color: white;
-}
 
 @media (min-width: 768px) {
-    #Sinfoniettadobidos{
-        margin-top: 100px;
-        font-size: 50px;
+    .Newsletter{ 
+        background-image: url(/assets/Images/Other/Pauta.webp);
+        transition: height 0.3s ease-in-out;
     }
+}
+
+@media (max-width: 768px) {
+    .Newsletter{ 
+        background-image: url(https://cdn.pixabay.com/photo/2013/07/12/14/33/melody-148443_1280.png);
+        background-size: cover;
+        background-position: center;
+        transition: height 0.3s ease-in-out;
+    }
+}
+
+.DivConcertos{
+    text-align: center;
+}
+
+.Newsletter{
+    text-align: center;
+}
+
+.DivConcertos h1{
+    margin-top: 100px;
+    color: rgb(182, 182, 9);
+}
+
+.Newsletter h3{
+    color: rgb(182, 182, 9);
+}
+
+
+.FooterApoios{
+    display: flex;
+    margin: 30px 30px 30px;
+}
+
+.LogoSinfoFooter {
+    width: 200px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+footer{
+    min-height: 400px;
+    align-items: center;
 }
