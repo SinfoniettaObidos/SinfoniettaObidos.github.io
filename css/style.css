@@ -141,11 +141,12 @@ header ul li:hover {
 
 .CardImage1 {  
     border: 3px solid rgb(182, 182, 9);
-    background-image: url(/assets/Images/Other/CasaDaMusica.webp);
+    background-image: url(https://scontent.flis4-1.fna.fbcdn.net/v/t1.6435-9/83736629_3114613881894322_7725566144437813248_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=TNJqcvb-ctEQ7kNvgEWI9-S&_nc_oc=AdjUcJsThjFVYr0hFH0GF4f1Y_85xpb1PGwEkykiE5evkpI8Zx0RrC3-DLdtGDG4Cts&_nc_zt=23&_nc_ht=scontent.flis4-1.fna&_nc_gid=AySBOrkSslEHiTQREuEGvkI&oh=00_AYAmR58cFlScGvNmpCxEfmRDXGH8Zlo9Pavuk1D-IAahyA&oe=67E2F819);
     border-radius: 3px;
     width: 20rem; /* Replace vh with rem for consistent scaling */
     height: 20rem; /* Use rem or auto scaling for height */
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
     position: relative;
 }
