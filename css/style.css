@@ -16,6 +16,7 @@ header {
     border: 1px solid rgba(209, 213, 219, 0.3);
     display: flex;
     top: 0;
+    z-index: 1000;
     right: 0;
     width: 100%;
     align-items: center;
@@ -139,9 +140,10 @@ header ul li:hover {
 }
 
 .CardImage1 {  
+    border: 3px solid rgb(182, 182, 9);
     background-image: url(/assets/Images/Other/CasaDaMusica.webp);
-    border-radius: 8px;
-    width: 14rem; /* Replace vh with rem for consistent scaling */
+    border-radius: 3px;
+    width: 20rem; /* Replace vh with rem for consistent scaling */
     height: 20rem; /* Use rem or auto scaling for height */
     background-repeat: no-repeat;
     background-position: center;
@@ -155,11 +157,9 @@ header ul li:hover {
     backdrop-filter: blur(2px) saturate(180%);
     background-color: rgba(255, 255, 255, 0.822);
     border: 1px solid rgba(209, 213, 219, 0.3);
-    width: calc(100% - 1rem); /* Dynamic width relative to the container */
-    padding: 1rem; /* Use rem for consistent padding */
-    height: auto; /* Adjust height based on content */
-    border-bottom-left-radius: 5px;
-    border-top-right-radius: 15px;
+    width: calc(100%);
+    padding: 1rem;
+    height: auto;
 }
 
 .WhiteCard h3 { 
@@ -676,7 +676,7 @@ form {
     font-weight: 200;
     font-size: 55px;
     margin-bottom: 50px;
-    color: rgb(204, 204, 9);
+    color: rgb(182, 182, 9);
 }
 
 #VilaNatalTitulo{
@@ -684,7 +684,7 @@ form {
     font-weight: 200;
     font-size: 55px;
     margin-bottom: 50px;
-    color: rgb(204, 204, 9);
+    color: rgb(182, 182, 9);
 }
 
 .GaleriaAnos{
