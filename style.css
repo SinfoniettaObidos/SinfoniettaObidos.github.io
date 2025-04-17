@@ -184,7 +184,7 @@ a {
     background-position: center;
     transition: height 0.3s ease-in-out;
     filter: brightness(0.7);
-    background-image: url(/assets/banners/BannerPrincipal.jpg);
+    background-image: url("/assets/banners/489315676_1085745786918602_2730095299769623352_n.jpg");
 }
 
 @media (min-width:800px){
