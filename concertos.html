@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinfonietta Obidos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        
+        <a href="index.html"><img class="LogoHeader" src="/assets/icons/icone_branco.svg" alt="Logo"></a>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
+        <nav class="navbar">
+            <ul>
+              <a href="index.html"><li>INICIO</li></a>
+              <a href="concertos.html" ><li>CONCERTOS</li></a>
+              <a href="sobre.html"><li>SOBRE NÓS</li></a>                
+              <a href="contact.html"><li>CONTACTOS</li></a>
+            </ul>
+        </nav>
+    
+    </header>
+
+    <div class="BannerPrincipal3"></div>
+
+    <div class="concertos_div">
+      <section id="concertos_section"></section>
+      <ul class="concertos_ul">
+        <li class="Card">
+          <div class="CardImage1"> 
+              <div class="WhiteCard">
+                  <h3>Local</h3>
+                  <p>Santuario Jesus da Pedra</p>
+                  <span class="HorarioCard">
+                  <br>
+                  <h3>Horario</h3>
+                  <p>16 de abril, 21 horas</p>
+                  </span>
+                  
+              </div>
+          </div>
+      </li>
+      </ul>
+  </div>
+
+  <footer style="margin-top: 170px;">
+    <div class="footer">
+        <div class="col-2">
+            <br><br>
+            <img src="/assets/icons/logo.png" alt="" class="footerlogo">
+            <h4>Desde 2014</h4>
+        </div>
+        <br><br>
+        <div class="col-2">
+            <h3>Links Rapidos</h3>
+            <ul class="nav__links2">
+                <li><button onClick="document.getElementById('PagIncial').scrollIntoView();" class="btnNav2">PÁGINA INICIAL</button></li>
+                <li><button onClick="document.getElementById('PagIncial').scrollIntoView();" class="btnNav2">CONCERTOS</button></li>
+                <li><button onClick="document.getElementById('Sobre').scrollIntoView();" class="btnNav2">SOBRE NÓS</button></li>
+                <li><button onClick="document.getElementById('galeria').scrollIntoView();" class="btnNav2">GALERIA</button></li>
+                <li><button onClick="document.getElementById('ofcMsc2').scrollIntoView();" class="btnNav2">OFICINA DE MÚSICA</button></li>
+                <li><button onClick="document.getElementById('ofcMsc').scrollIntoView();" class="btnNav2">CONTACTOS</button></li>
+                <li><button class="btnNav2"><a href="https://vs01.logotipo.net:2096/">WEBMAIL (RESTRITO)</a></button></li>
+            </ul>
+        </div>
+        <br><br>
+        <div class="col-3">
+            <h3>Contactos</h3>
+            <p>Complexo Escolar Dos Arcos, <br> R. Municipal 17, Óbidos</p>
+            <p>+351 966 373 585</p>
+            <p>geral@sinfoniettaobidos.pt</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/p/Sinfonietta-d%C3%93bidos-100063864136837/?_rdr"><i class="fab fa-facebook"></i></a>
+                <a href=""></a><i class="fab fa-instagram"></i></a>
+                <a href=""></a><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+    <div id="MadeBy">
+        <p>© Sinfonietta Obidos 2024.<br>Made by <a href="https://hugottr.com" target="_blank"><span id="HugottrMade">hugottr</span></a></p>
+    </div>
+</footer>
+
+</body>
+
+<script>
+    /* THIS WAS MADE BY CLAUDE AI */
+    window.addEventListener('scroll', function() {
+  const header = document.querySelector('header');
+  
+  if (window.scrollY > 50) {
+    header.classList.add('glassy-header');
+  } else {
+    header.classList.remove('glassy-header');
+  }
+});
+
+// Add this new code to handle the menu toggle
+document.getElementById('check').addEventListener('change', function() {
+  if (this.checked) {
+    document.body.style.overflow = 'hidden'; // Disable scrolling
+  } else {
+    document.body.style.overflow = ''; // Re-enable scrolling
+  }
+});
+
+  </script>
+  
+</html>
