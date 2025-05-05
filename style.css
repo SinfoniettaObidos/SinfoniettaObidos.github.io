@@ -695,7 +695,15 @@ textarea {
     margin-bottom: 10px
 }
 
-.btnNav2 a{
+.btnNav2{
+    border: 0px;
+    color: white;
+    background-color: #00000000;
+    font-family: "Montserrat";
+    font-weight: 600;
+}
+
+.btnNav3 {
     border: 0px;
     color: white;
     background-color: #00000000;
