@@ -4,7 +4,7 @@ This work is protected by Copyright license.
 
 Did you want to go to the website? / Querias ir para o website?
 
-[![GO TO WEBSITE](https://img.shields.io/badge/Clica%20here%20/%20Clica%20Aqui-blue)](https://sinfoniettaobidos.pt)
+[![GO TO WEBSITE](https://img.shields.io/badge/Click%20here%20/%20Clica%20Aqui-blue)](https://sinfoniettaobidos.pt)
 
 
 
