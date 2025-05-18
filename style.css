@@ -234,7 +234,7 @@ a {
     background-position: center;
     transition: height 0.3s ease-in-out;
     filter: brightness(0.7);
-    background-image: url("/assets/banners/FundoComDegrade.png");
+    background-image: url("/assets/banners/FundoComDegrade.webp");
 }
 
 @media (min-width:800px){
@@ -260,7 +260,7 @@ a {
     background-position: center;
     transition: height 0.3s ease-in-out;
     filter: brightness(0.7);
-    background-image: url("/assets/banners/Arcos.png");
+    background-image: url("/assets/banners/Arcos.webp");
 }
 
 @media (min-width:800px){
@@ -285,7 +285,7 @@ a {
     background-position: center;
     transition: height 0.3s ease-in-out;
     filter: brightness(0.7);
-    background-image: url("/assets/banners/concertos_banner.svg");
+    background-image: url("/assets/banners/Concertos-banner.webp");
 }
 
 @media (min-width:800px){
@@ -311,7 +311,7 @@ a {
     background-position: center;
     transition: height 0.3s ease-in-out;
     filter: brightness(0.7);
-    background-image: url("/assets/banners/banner_sobre.png");
+    background-image: url("/assets/banners/banner_sobre.webp");
 }
 
 @media (min-width:800px){
